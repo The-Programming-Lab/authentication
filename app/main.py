@@ -62,7 +62,7 @@ async def login(user : User):
     except:
         return {"message": "Invalid credentials"}
 
-@app.post("/test")
+@app.get("/test")
 async def test():
     return {"message": "Test successful"}
 
