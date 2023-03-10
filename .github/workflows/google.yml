@@ -21,9 +21,9 @@ env:
   GAR_LOCATION: us-west1 # TODO: update region of the Artifact Registry
   GKE_CLUSTER: main    # TODO: update to cluster name
   GKE_ZONE: us-central1-b   # TODO: update to cluster zone
-  DEPLOYMENT_NAME: gke-test # TODO: update to deployment name
+  DEPLOYMENT_NAME: auth-ms # TODO: update to deployment name
   REPOSITORY: hello-repo # TODO: update to Artifact Registry docker repository
-  IMAGE: static-site # name of image in artifact repo
+  IMAGE: auth-ms # name of image in artifact repo
 
 jobs:
   setup-build-publish-deploy:
