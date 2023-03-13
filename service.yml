@@ -18,8 +18,11 @@ metadata:
   name: auth-service
 spec:
   type: LoadBalancer
+  externalTrafficPolicy: Cluster
   ports:
-    - port: 80
+    - name: tcp-port
+      protocol: TCP
+      port: 80
       targetPort: 8000
   selector:
     app: auth-ms
